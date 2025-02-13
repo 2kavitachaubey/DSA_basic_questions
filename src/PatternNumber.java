@@ -163,6 +163,31 @@ public class PatternNumber {
             System.out.println();
         }
         System.out.println();
+
+        System.out.println("Pattern 11");
+        for(int row = 1; row <= num; row++){
+            for(int col = num; col > num-row; col--) {
+                System.out.print(col);
+            }
+            for(int col = 1; col<=num-row; col++){
+                System.out.print(num-row+1);
+            }
+            System.out.println();
+        }
+        System.out.println();
+
+
+        System.out.println("Pattern 12");
+        for(int row = 1; row <= num; row++){
+            for(int col = row; col< num; col++) {
+                System.out.print(col);
+            }
+            for(int col = num; col > num-row; col--){
+                System.out.print(num);
+            }
+            System.out.println();
+        }
+        System.out.println();
     }
     public static void main(String[] args) {
         PatternNumber p = new PatternNumber();
