@@ -188,6 +188,18 @@ public class PatternNumber {
             System.out.println();
         }
         System.out.println();
+
+        System.out.println("Pattern 13");
+        for(int row = 1; row <= num; row++){
+            for(int col = row; col>1; col--) {
+                System.out.print(col);
+            }
+            for(int col = 1; col <= num-row+1; col++){
+                System.out.print(col);
+            }
+            System.out.println();
+        }
+        System.out.println();
     }
     public static void main(String[] args) {
         PatternNumber p = new PatternNumber();
