@@ -200,6 +200,18 @@ public class PatternNumber {
             System.out.println();
         }
         System.out.println();
+
+        System.out.println("Pattern 14");
+        for(int row = 1; row <= num; row++){
+            for(int col = num; col>=num-row+1; col--) {
+                System.out.print(col);
+            }
+            for(int col = 1; col <= num; col++){
+                System.out.print(num-row-1);
+            }
+            System.out.println();
+        }
+        System.out.println();
     }
     public static void main(String[] args) {
         PatternNumber p = new PatternNumber();
