@@ -206,8 +206,14 @@ public class PatternNumber {
             for(int col = num; col>=num-row+1; col--) {
                 System.out.print(col);
             }
-            for(int col = 1; col <= num; col++){
-                System.out.print(num-row-1);
+            for(int col = 1; col<=num-row ; col++){
+                System.out.print(num-row+1);
+            }
+            for(int col = 1; col<=num-row-1 ; col++){
+                System.out.print(num-row+1);
+            }
+            for(int col = Math.max(2, num - row + 1); col<=num; col++) {
+                System.out.print(col);
             }
             System.out.println();
         }
