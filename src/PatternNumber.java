@@ -203,16 +203,25 @@ public class PatternNumber {
 
         System.out.println("Pattern 14");
         for(int row = 1; row <= num; row++){
-            for(int col = num; col>=num-row+1; col--) {
+            for(int col = num; col>num-row+1; col--) {
                 System.out.print(col);
             }
-            for(int col = 1; col<=num-row ; col++){
+            for(int col = 1; col <= 2*(num-row)+1 ; col++){
                 System.out.print(num-row+1);
             }
-            for(int col = 1; col<=num-row-1 ; col++){
-                System.out.print(num-row+1);
+            for(int col = num-row+2; col<=num ; col++){
+                System.out.print(col);
             }
-            for(int col = Math.max(2, num - row + 1); col<=num; col++) {
+            System.out.println();
+        }
+        for(int row = 1; row < num; row++){
+            for(int col = num; col>row; col--) {
+                System.out.print(col);
+            }
+            for(int col = 1; col <=2*(row)-1 ; col++){
+                System.out.print(row+1);
+            }
+            for(int col = row+1; col<=num ; col++){
                 System.out.print(col);
             }
             System.out.println();
