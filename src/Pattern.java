@@ -4,7 +4,7 @@ public class Pattern {
         System.out.println("Pattern 1");
         for(int row =0;row<num;row++){
             for(int col=0;col<num;col++){
-                System.out.print("* ");
+                System.out.print("*");
             }
             System.out.println();
         }
