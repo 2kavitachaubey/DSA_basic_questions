@@ -1,7 +1,7 @@
 public class ArmstrongNumber {
 
     public static void main(String[] args) {
-        int num = 9474;
+        int num = 68768;
         int count = 0;
         int copy =num;
         int sum = 0;
